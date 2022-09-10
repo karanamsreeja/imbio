@@ -1,0 +1,109 @@
+.App {
+    text-align: center;
+  }
+  .navColor {
+    color:#000 !important;
+  }
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: #fff !important;
+}
+  .nav-bg{
+  /* background-color: #fff !important; */
+  padding: 10px 7% !important;
+  }
+  .f14{
+    font-size: 14px !important;
+  }
+  .f12{
+    font-size: 12px !important;
+  }
+  .f16{
+    font-size: 16px;
+  }
+  .fw6{
+    font-weight: 600 !important;
+  }
+  .text-trans{
+    text-transform: none !important;
+  }
+  .mr10{
+    margin-right: 10px !important;
+  }
+  .mt15{
+    margin-top:15px !important;
+  }
+  .mt10{
+    margin-top:10px !important;
+  }
+.b{
+  font-weight: bold;
+}
+.blue{
+  color: rgb(6, 34, 92);
+}
+.orange{
+ color: rgb(218, 133, 41)
+}
+.left-align{
+  text-align: left;
+}
+.white{
+  color:#fff;
+}
+
+
+  /* navbar  */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    /* padding: 6px 10px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .login-botton {
+    background-image: linear-gradient(to right, #0865a7 , #0a456F);
+    border-radius: 10px;
+  }
+  .home-btn{
+    border-radius: 15px !important;
+}
+
+.page{
+  padding:8% 0;
+  text-align: center;
+}
