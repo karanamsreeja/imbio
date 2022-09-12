@@ -136,10 +136,10 @@ const Topbar = () => {
           </Typography>
         
           <Box sx={{ flexGrow: 1 , display: { xs: 'none', md: 'flex', justifyContent: "space-evenly"} }} >
-          <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./'}>
+          <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./'}>
                Home
               </Button>
-          <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans">
+          <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans">
           <div class="dropdown">
     <button class="dropbtn fw6 f12 text-trans">About Us 
     <KeyboardArrowDownIcon style={{fontSize:'13px',marginBottom:'-2px'}}/>
@@ -153,13 +153,13 @@ const Topbar = () => {
 </div>
               </Button>
          
-              <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans"  onClick={() => window.location.href='./learn'}>
+              <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans"  onClick={() => window.location.href='./learn'}>
                Learn
               </Button>
-              <Button sx={{ my: 1,color: '#000', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./services'}>
+              <Button sx={{ my: 1,color: '#fff', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./services'}>
                Our Service
               </Button>
-              <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./stories'}>
+              <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./stories'}>
               Success Stories
               </Button>
           </Box>

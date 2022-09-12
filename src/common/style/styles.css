@@ -5,7 +5,7 @@
     color:#000 !important;
   }
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
 }
   .nav-bg{
   /* background-color: #fff !important; */
@@ -62,7 +62,7 @@
     font-size: 16px;  
     border: none;
     outline: none;
-    color: black;
+    color: #fff;
     /* padding: 6px 10px; */
     background-color: inherit;
     font-family: inherit;
