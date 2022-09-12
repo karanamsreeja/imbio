@@ -169,7 +169,7 @@ Get Started
           </Button>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-          <Button variant="contained" sx={{m:1}} className="login-botton">
+          <Button variant="contained" sx={{m:1}} className="login-botton" >
             <span >Login</span>
           </Button>
           </Box>
