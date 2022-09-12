@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../common/style/home.css";
 import {Grid,Button, Box } from "@mui/material"
 import { AiOutlinePlayCircle } from "react-icons/ai";
@@ -13,8 +13,31 @@ import iom from "../common/images/home/iom.png";
 import iom2 from "../common/images/home/iom2.jpg";
 import iom3 from "../common/images/home/iom3.jpg";
 import customer from "../common/images/home/customer.png";
+import YouTube from 'react-youtube';
+import Dialog from '@mui/material/Dialog';
+import video from "../common/videos/intro_video.mp4";
+import CloseIcon from '@mui/icons-material/Close';
 
 function Home() {
+
+  const [show, setShow] = useState(false);
+  const [openVideo, setOpenVideo] = React.useState(false);
+  const handleClickOpenVideo = () => {
+    setOpenVideo(true);
+  };
+
+  const handleCloseVideo = () => {
+    setOpenVideo(false);
+  };
+  const opts = {
+    height: '390',
+    width: '640',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
+
   return (
     <ThemeProvider theme={hrmsTheme}> 
     <div className="home">
@@ -23,14 +46,48 @@ function Home() {
         <Grid item xs={12}>
         <h6 className="main-headding"> EMPOWER YOUR MICROBIOME</h6>
         <h5 className="sub-headding">MAKE YOUR BACTERIA WORK FOR YOU</h5>
+      
+      
       <div style={{display:'flex',justifyContent:'center'}}>
         <Button variant="contained" className="home-btn text-trans" color='primary' sx={{m:2}} style={{color:'#fff'}}>Get Started</Button>
-        <Button variant="outlined" className="home-btn text-trans" style={{color:'rgb(6, 34, 92)',borderColor:'rgb(6, 34, 92)'}} sx={{m:2}}> <AiOutlinePlayCircle className="mr10"/> Watch Video</Button>
+      
+      
+        <Button variant="outlined" className="home-btn text-trans" style={{color:'rgb(6, 34, 92)',borderColor:'rgb(6, 34, 92)'}} sx={{m:2}}
+      //  onClick={handleClickOpenVideo}
+       onClick = {()  =>  setShow(!show) }
+      //    {  <iframe
+      //     src="https://www.youtube.com/embed/q_ij9Rc94wA"
+      //     frameborder="0"
+      //     allow="autoplay; encrypted-media"
+      //     allowfullscreen
+      //     title="video"
+      //   />; console.log()
+      // } }
+        // <YouTube videoId="q_ij9Rc94wA" opts={opts}  />}
+        
+        >
+           <AiOutlinePlayCircle className="mr10" /> Watch Video</Button>
+
+      
       </div>
         </Grid>
         
         </Grid>
-       
+
+{show &&
+ <div class="intro-video">
+   <video width="100%" controls autoplay="">
+      <source src={video} type="video/mp4"/>
+     </video>
+  {/* <video width="100%" controls="" autoplay="" >
+   <source src={video} type="video/mp4" /> 
+  <source src={video} type="video/mp4" />
+  </video> */}
+  <div class="popup-video-player__close" > 
+  <  CloseIcon onClick = {() => setShow(false)}/>
+     </div></div>}
+   
+      
       </div>
       <div className='section' style={{backgroundColor:'#E3B14A'}}>
         <div className='system'>Your System and It’s Bacteria</div>
@@ -123,6 +180,15 @@ function Home() {
         </div>
         
     </div>
+    <Dialog
+        open={openVideo}
+        onClose={handleCloseVideo}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+         <Button onClick={handleCloseVideo} style={{float:'right'}}>Disagree</Button>
+         <iframe src="https://www.youtube.com/embed/uXWycyeTeCs" width={500} height={500} ></iframe>
+      </Dialog>
     
     </ThemeProvider>
   )

@@ -119,3 +119,17 @@ font-family: Roboto, Helvetica, Arial, sans-serif;
     width:100%;
 }
 }
+
+.intro-video {
+    position: absolute;
+    top: 90px;
+    width: 80%;
+}
+.popup-video-player__close {
+    cursor: pointer;
+    padding: 10px;
+     position: absolute;
+     float:right;
+    right: 0;;
+    top: 0; 
+}
