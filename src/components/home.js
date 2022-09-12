@@ -83,7 +83,7 @@ function Home() {
         <Grid item xl={6} md={6} sm={12} xs={12} style={{textAlign:'center'}}><img src={iom} alt="" style={{}} className="img-resp"/></Grid>
         </Grid>
         <Grid container spacing={2} className="mt15">
-        <Grid item xl={6} md={6} sm={12} xs={12} style={{textAlign:'center'}}><img src={iom2} alt="" style={{}} className="img-resp"/></Grid>
+        <Grid item xl={6} md={6} sm={12} xs={12} style={{textAlign:'left'}}><img src={iom2} alt="" style={{}} className="img-resp"/></Grid>
        
         <Grid item xl={6} md={6} sm={12} xs={12} className="left-align">
           <p className="orange">STEP 2</p>

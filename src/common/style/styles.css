@@ -5,8 +5,8 @@
     color:#000 !important;
   }
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
-  /* background-color: #fff !important; */
-}
+  background-color: #fff !important;
+}  
   .nav-bg{
   /* background-color: #fff !important; */
   padding: 10px 7% !important;
@@ -62,13 +62,17 @@
     font-size: 16px;  
     border: none;
     outline: none;
-    color: #fff;
+    color: #000;
     /* padding: 6px 10px; */
     background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
-  
+  @media (max-width: 900px) {
+    .dropdown .dropbtn {
+      color:#000;
+    }
+  }
   
   .dropdown-content {
     display: none;

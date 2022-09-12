@@ -55,8 +55,9 @@ const Topbar = () => {
               color: 'inherit',
               textDecoration: 'none',
             }}
+        
           >
-         <img src={logo} alt=""/>
+         <img src={logo} alt=""     style={{overFlow:'visible'}}/>
           </Typography>
           
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -136,10 +137,10 @@ const Topbar = () => {
           </Typography>
         
           <Box sx={{ flexGrow: 1 , display: { xs: 'none', md: 'flex', justifyContent: "space-evenly"} }} >
-          <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./'}>
+          <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./'}>
                Home
               </Button>
-          <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans">
+          <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans">
           <div class="dropdown">
     <button class="dropbtn fw6 f12 text-trans">About Us 
     <KeyboardArrowDownIcon style={{fontSize:'13px',marginBottom:'-2px'}}/>
@@ -148,24 +149,25 @@ const Topbar = () => {
       <a href="./company">Our Company</a>
       <a href="./team">Our Team</a>
       <a href="./experts">Our Experts</a>
+      <a href="./get-started">Get Started</a>
     </div>
   
 </div>
               </Button>
          
-              <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans"  onClick={() => window.location.href='./learn'}>
+              <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans"  onClick={() => window.location.href='./learn'}>
                Learn
               </Button>
-              <Button sx={{ my: 1,color: '#fff', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./services'}>
+              <Button sx={{ my: 1,color: '#000', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./services'}>
                Our Service
               </Button>
-              <Button sx={{ my: 1, color: '#fff', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./stories'}>
+              <Button sx={{ my: 1, color: '#000', display: 'block' }} className="fw6 f12 text-trans" onClick={() => window.location.href='./stories'}>
               Success Stories
               </Button>
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }}}>
           <Button variant="contained" sx={{m:1}} style={{borderRadius:'20px',backgroundColor:'#E1AB3B'}} onClick={() => window.location.href='./get-started'}>
-Get Started
+          Get Started
           </Button>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
